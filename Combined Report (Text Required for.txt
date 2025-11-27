@@ -1,0 +1,59 @@
+Combined Report (Text Required for Submission)
+Title: K-Means Clustering – Full Implementation & Analysis
+1. Overview
+
+This assignment focuses on understanding and implementing the K-Means clustering algorithm from scratch. The project includes synthetic dataset generation, elbow method analysis, custom K-Means implementation, visualization, and comparison with sklearn.
+
+2. Dataset Generation
+
+The dataset was generated using scikit-learn’s make_blobs() with:
+
+1000 samples
+
+4 natural clusters
+
+Cluster standard deviation = 1.0
+
+A scatter plot confirmed four visually distinct groups.
+
+3. K-Means Algorithm (From Scratch)
+
+The manual NumPy implementation included:
+
+Random centroid initialization
+
+Computing Euclidean distances
+
+Assigning each point to the nearest centroid
+
+Updating centroids until convergence
+
+Manual inertia (WCSS) calculation
+
+The algorithm successfully clustered the dataset.
+
+4. Elbow Method Analysis
+
+K values from 2 to 10 were tested using WCSS.
+A clear “elbow” appeared at K = 4, confirming the true number of clusters.
+This demonstrates correct use of cluster evaluation techniques.
+
+5. Visualizing the Final Clusters
+
+Cluster visualization shows well-formed groups, with centroids marked clearly.
+Colors represent different cluster labels.
+
+6. Comparison With sklearn KMeans
+Point of Comparison	Scratch Implementation	sklearn KMeans
+Initialization	Random	KMeans++
+Speed	Slower	Very fast
+Accuracy	Very close	Highly accurate
+Optimization	Manual	Automatic C-optimized
+Practical Use	Educational	Industry-level
+
+Both methods produced almost identical centroids and cluster patterns.
+
+7. Conclusion
+
+The assignment successfully demonstrates full understanding of unsupervised machine learning. The scratch K-Means implementation works correctly and matches sklearn’s performance closely. The Elbow Method validated the choice of K = 4.
+This project highlights the ability to implement algorithms from first principles and perform proper cluster analysis.
